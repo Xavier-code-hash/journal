@@ -1,18 +1,20 @@
 {
-  "name": "journal",
+  "name": "daily-journal",
   "version": "1.0.0",
-  "description": "",
+  "private": true,
+  "description": "A full-stack daily journal app with image support",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "node --watch server.js"
   },
-  "keywords": [],
+  "keywords": ["journal", "notes", "daily"],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.6",
     "express": "^5.2.1",
+    "multer": "^2.2.0",
     "sqlite3": "^6.0.1"
   }
 }
